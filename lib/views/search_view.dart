@@ -85,6 +85,7 @@ class _SearchViewState extends State<SearchView> {
                     onPressed: () {
                       Navigator.pop(context);
                       cubit.getWeatherData();
+                      // cubit.cityNameController.clear();
                     },
                     style: FilledButton.styleFrom(
                         shape: RoundedRectangleBorder(

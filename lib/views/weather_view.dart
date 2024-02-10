@@ -53,7 +53,7 @@ class _WeatherViewState extends State<WeatherView> {
               widget.model.cityName,
               style:  TextStyle(
                 color: Theme.of(context).primaryColor,
-                fontSize: 20,
+                fontSize: 30,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -62,13 +62,13 @@ class _WeatherViewState extends State<WeatherView> {
               height: 30,
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                //  Image.network(widget.model.image, height: 15,),
+                 Image.network('https:${widget.model.image}', height: 50,),
                 Text(
                   'Temp: ${widget.model.temp}',
                   style:  TextStyle(
-                      fontSize: 18, fontWeight: FontWeight.bold , color: Theme.of(context).primaryColor),
+                      fontSize: 25, fontWeight: FontWeight.bold , color: Theme.of(context).primaryColor),
                 ),
                 Column(
                   children: [

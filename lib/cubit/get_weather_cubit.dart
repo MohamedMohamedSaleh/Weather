@@ -23,7 +23,6 @@ class GetWeatherCubit extends Cubit<GetWeatherStates> {
     });
     if (response.isSuccess) {
       final model = WeatherData.fromJson(response.response!.data);
-      print(model.cityName);
       showMessage(message: response.message, type: MessageType.success);
       emit(GetWeatherSuccessState(model: model));
     } else {
