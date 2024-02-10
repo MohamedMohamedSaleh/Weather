@@ -8,6 +8,7 @@ void showMessage({required String message,  MessageType type = MessageType.faile
     SnackBar(
       content: Center(child: Text(message,)),
       behavior: SnackBarBehavior.floating,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
       backgroundColor: type == MessageType.success? Theme.of(navigatorKey.currentContext!).primaryColor: Colors.red,
     ),
   );

@@ -28,17 +28,23 @@ class _WeatherViewState extends State<WeatherView> {
       ),
       body: Container(
         padding: const EdgeInsets.all(16),
-        decoration: const BoxDecoration(
-            // gradient: LinearGradient(
-            //   begin: Alignment.topCenter,
-            //   end: Alignment.bottomCenter,
-            //   colors: [
-            //     // Color.fromARGB(255, 6, 105, 185),
-            //     Colors.blue,
-            //     Colors.blue,
-            //     Colors.white,
-            //   ],
-            // ),
+        decoration:  BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                // Color.fromARGB(255, 6, 105, 185),
+                Colors.white,
+                Theme.of(context).primaryColor.withOpacity(0.1),
+                Colors.white,
+                Colors.white,
+                Colors.white,
+                Colors.white,
+                Colors.white,
+                Theme.of(context).primaryColor.withOpacity(0.1),
+                Colors.white,
+              ],
+            ),
             ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

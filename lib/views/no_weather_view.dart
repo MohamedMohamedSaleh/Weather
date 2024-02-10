@@ -10,7 +10,19 @@ class NoWeather extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          'Weather App',
+          style: TextStyle(
+            color: Theme.of(context).primaryColor,
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        centerTitle: true,
+      ),
+      body: Center(
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: SizedBox(
@@ -35,6 +47,9 @@ class NoWeather extends StatelessWidget {
           ),
         ),
       ),
+    ),
     );
+    
+     
   }
 }
