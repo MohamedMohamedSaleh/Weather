@@ -16,7 +16,8 @@ class GetWeatherCubit extends Cubit<GetWeatherStates> {
 
   Future<void> getWeatherData() async {
     emit(GetWeatherLoadingState());
-    var response = await DioHelper.getData(endPoint: 'forecast.json?', map: {
+    var response = await DioHelper.getData(endPoint: 'forecast.json?',
+     map: {
       'key': 'a374e16f1c114334b4d190953240502',
       'q': cityNameController.text,
       'days': '1',
